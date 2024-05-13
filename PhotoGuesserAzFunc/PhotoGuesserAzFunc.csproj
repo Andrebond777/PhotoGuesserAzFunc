@@ -26,4 +26,7 @@
     <ItemGroup>
         <Using Include="System.Threading.ExecutionContext" Alias="ExecutionContext"/>
     </ItemGroup>
+    <ItemGroup>
+        <None Update="$(SolutionDir)PhotoGuesserAzFunc/Data/**"  CopyToOutputDirectory="PreserveNewest"  />
+    </ItemGroup>
 </Project>
