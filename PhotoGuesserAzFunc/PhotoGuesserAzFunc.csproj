@@ -28,5 +28,6 @@
     </ItemGroup>
     <ItemGroup>
         <None Update="$(SolutionDir)PhotoGuesserAzFunc/Data/**"  CopyToOutputDirectory="PreserveNewest"  />
+        <None Update="$(SolutionDir)PhotoGuesserAzFunc/Data/continentSelectionChance.csv"  CopyToOutputDirectory="PreserveNewest"  />
     </ItemGroup>
 </Project>

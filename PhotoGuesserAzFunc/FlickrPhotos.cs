@@ -78,7 +78,7 @@ public class FlickrPhotos
     {
         Random rnd = new Random();
         string country = "";
-        if (continent.Equals("NorthAmerica"))
+        if (continent.Equals("North America"))
         {
             int rndChanceSelectUS = rnd.Next(0, 10);
             if (rndChanceSelectUS != 5)
@@ -87,9 +87,7 @@ public class FlickrPhotos
         if(country.Equals(""))
         {
             var countries = new List<string>();
-            using (TextFieldParser parser = new TextFieldParser(
-                       @"Data/CountriesByContinent/"
-                       + "Countries" + continent + ".csv"))
+            using (TextFieldParser parser = new TextFieldParser(@"Data/CountriesByContinent/" + continent + ".csv"))
             {
                 parser.TextFieldType = FieldType.Delimited;
                 parser.SetDelimiters(",");
